@@ -1,0 +1,17 @@
+{
+ "id": "emcphoenix2app",
+ "env": {
+  "VCAP_SERVICES": "DUMMY DUMMY DUMMY",
+  "DATABASE_URL": "postgres://postgres:test123!@phoenix_db:5432/phoenix2"
+ },
+ "container": {
+  "type": "DOCKER",
+  "docker": {
+   "image": "mesos01c7:5000/emc_phoenix2_app",
+   "network": "BRIDGE",
+   "portMappings": [
+     { "containerPort": 8000, "hostPort": 0, "protocol": "tcp" }
+   ]
+  }
+ }
+}
