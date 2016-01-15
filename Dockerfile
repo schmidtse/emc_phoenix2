@@ -27,4 +27,4 @@ RUN apt-get update && apt-get install -y \
 RUN chmod +x *.sh
 
 EXPOSE 8000
-CMD ["startup.sh"]
+CMD ["./startup.sh"]

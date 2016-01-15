@@ -1,0 +1,17 @@
+{
+ "id": "emcphoenix2message",
+ "env": {
+  "RABBITMQ_DEFAULT_PASS": "test123!",
+  "RABBITMQ_DEFAULT_USER": "rabbitmq"
+ },
+ "container": {
+  "type": "DOCKER",
+  "docker": {
+   "image": "rabbitmq",
+   "network": "BRIDGE",
+   "parameters": [
+     { "key": "hostname", "value": "phoenix_message.weave.local" }
+   ]
+   }
+ }
+}

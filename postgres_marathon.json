@@ -1,0 +1,18 @@
+{
+ "id": "emcphoenix2db",
+ "env": {
+  "POSTGRES_PASSWORD": "test123!",
+  "POSTGRES_USER": "postgres",
+  "POSTGRES_DB": "phoenix2"
+ },
+ "container": {
+  "type": "DOCKER",
+  "docker": {
+   "image": "postgres",
+   "network": "BRIDGE",
+   "parameters": [
+     { "key": "hostname", "value": "phoenix_db.weave.local" }
+   ]
+   }
+ }
+}
